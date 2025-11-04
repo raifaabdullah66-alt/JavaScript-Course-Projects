@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Raifa Abdullah</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<!-- Body -->
+<body class="Background">   
+
+    <!-- Navbar -->
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#Slideshow">Projects</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+    </div>
+
+    <!-- Background video -->
+    <div id="Home">
+        <video autoplay muted loop id="Typing_Video">
+            <source src="https://cdn.pixabay.com/video/2015/10/16/1046-142621379_tiny.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!-- Video text -->
+    <div class="Video_Text">
+        <h1 class="white-text">Raifa Abdullah’s Digital Portfolio</h1>
+        <strong>
+            <p class="center quote">
+                <q>Programming isn’t just about writing code—it’s about creating possibilities out of logic and imagination.
+                    <br>Every new line brings a step closer to innovation and problem-solving.
+                </q>
+                <br> – Raifa Abdullah<br><br>
+                Hi! I'm <b>Raifa Abdullah</b>, a curious student developer passionate about technology and creativity. 
+                <br><br>
+                On this site, you’ll find a showcase of my learning journey, personal projects, and the coding skills I’m developing.
+                <br><br>
+                Thanks for stopping by — feel free to explore and connect!
+            </p>
+        </strong>
+    </div>
+
+    <!-- Slideshow -->
+    <div id="Slideshow">
+        <div id="Slideshow_Background"> 
+            <div id="Slideshow_Container">
+
+                <!-- Slides -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://cdn.pixabay.com/photo/2014/12/27/15/40/office-581131_1280.jpg">
+                    <div class="text">Exploring the world of coding, one project at a time.</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png"> 
+                    <div class="text">Learning front-end development: HTML, CSS, and JavaScript.</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://cdn.pixabay.com/photo/2015/05/31/15/14/woman-792162_1280.jpg">
+                    <div class="text">Enhancing my Python and data analysis skills.</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://cdn.pixabay.com/photo/2015/12/09/15/51/code-1084923_1280.png">
+                    <div class="text">Experimenting with web app development and APIs.</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://cdn.pixabay.com/photo/2015/01/08/18/26/man-593333_1280.jpg"> 
+                    <div class="text">Building strong foundations in databases and backend logic.</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://cdn.pixabay.com/photo/2015/01/08/18/26/man-593333_1280.jpg"> 
+                    <div class="text"><a class="white-text contact" onclick="openForm()">Want to collaborate? Let’s chat!</a></div> 
+                </div>
+
+                <!-- Navigation -->
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span> 
+                <span class="dot" onclick="currentSlide(5)"></span> 
+                <span class="dot" onclick="currentSlide(6)"></span> 
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="Row" id="About">
+        <div class="Column_2">
+            <img src="https://cdn.pixabay.com/photo/2019/04/25/14/43/workplace-4155023_1280.jpg" alt="Laptop workspace">
+        </div>
+        <div class="Column_1">
+            <h1>About Me</h1>
+            <p>
+                I’m <b>Raifa Abdullah</b>, a student with a deep interest in coding and digital design.
+                <br><br>
+                My goal is to build user-focused, creative web applications that make technology feel more personal and accessible.
+                <br><br>
+                I’m currently studying full-stack development and improving my skills in:
+                <br>HTML, CSS, JavaScript, Python, and SQL.
+                <br><br>
+                When I’m not coding, I enjoy exploring new tools, collaborating on projects, and experimenting with creative design ideas.
+                <a onclick="openForm()" class="contact">Let’s connect!</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- GitHub -->
+    <div class="Row" id="GitHub">
+        <div class="Column_1">
+            <h1>GitHub</h1>
+            <p>Check out some of my recent projects and code experiments:</p>
+            <p class="center"><a href="https://github.com/raifaabdullah66-alt" target="_blank">My GitHub Profile</a></p>
+        </div>
+        <div class="Column_2">
+            <a href="https://github.com/raifaabdullah66-alt" target="_blank">
+                <img src="https://cdn.pixabay.com/photo/2021/09/23/06/59/github-6648895_1280.jpg" alt="GitHub Logo">
+            </a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="Contact">
+        <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+        <div class="form-popup" id="myForm" ondblclick="closeForm()">
+            <form action="" method="POST" class="form-container">
+                <h1>Contact Me</h1>
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Enter your name" name="name" required>
+                <label for="phone"><b>Phone</b></label>
+                <input type="text" placeholder="Enter your phone number" name="phone">
+                <label for="email"><b>Email</b></label>		
+                <input type="text" placeholder="Enter your email address" name="email" required>
+                <label for="message"><b>Message</b></label>
+                <input type="text" placeholder="Type your message here" name="message">
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p class="center">&copy; 2025 Raifa Abdullah — <a href="https://github.com/raifaabdullah66-alt" target="_blank">GitHub</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
